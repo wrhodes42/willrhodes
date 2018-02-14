@@ -1,0 +1,29 @@
+/****** SCROLLBARS ******/
+
+*::-webkit-scrollbar{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-track-piece{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border: 2px solid #fff;
+}
+
+*::-webkit-scrollbar{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-track-piece{
+    background-color: #fff;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #0000ff;
+    border: 2px solid #fff;
+}
