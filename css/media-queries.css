@@ -22,19 +22,19 @@
 @media only screen and (min-width: 768px){
     
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     #header h3{
-        padding: 2.5rem;
+        padding: 1.5rem;
     }
     
     .project-info{
-        padding: 2.5rem;
+        padding: 1.5rem;
     }
     
     .img-repeat{
@@ -52,14 +52,17 @@
     }
     
     .contain{
-        padding: 7.5rem;
+        padding: 10rem;
     }
     
     .img-fit{
-        padding: 7.5rem;
+        padding: 10rem;
     }
     
-    h1{
+}
+
+@media only screen and (min-width: 1600px){
+	h1{
         font-size: 5rem;
     }
     
@@ -74,5 +77,4 @@
     .project-info{
         padding: 3rem;
     }
-    
 }
