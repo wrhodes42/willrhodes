@@ -200,30 +200,6 @@ a:active{
     display: block;
 }
 
-.video-contain{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    overflow-x: hidden;
-    -moz-overflow: hidden;
-    
-}
-
-.video{
-    width: auto;
-    height: auto;
-    max-width: 140%;
-    left: 50%;
-    -webkit-transform: translate(-12.5%, 0%);
-        -moz-transform: translate(-12.5%, 0%);
-            -ms-transform: translate(-12.5%, 0%);
-    transform: translate(-12.5%, 0%);
-    overflow: hidden;
-    overflow-x: hidden;
-    -moz-overflow: hidden;
-    min-width: 0px;
-}
-
 /***** SLIDES *****/
 
 .fp-slides{
