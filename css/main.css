@@ -214,12 +214,14 @@ a:active{
     height: auto;
     max-width: 140%;
     left: 50%;
-    -webkit-transform: translateX(-12.5%);
-        -ms-transform: translateX(-12.5%);
-            transform: translateX(-12.5%);
+    -webkit-transform: translate(-12.5%, 0%);
+        -moz-transform: translate(-12.5%, 0%);
+            -ms-transform: translate(-12.5%, 0%);
+    transform: translate(-12.5%, 0%);
     overflow: hidden;
     overflow-x: hidden;
     -moz-overflow: hidden;
+    min-width: 0px;
 }
 
 /***** SLIDES *****/
