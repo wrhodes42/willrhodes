@@ -179,6 +179,7 @@ a:active{
     height: 100%;
     margin: 0;
     padding: 1rem;
+    z-index: 1;
 }
 
 .img-contain{
@@ -206,6 +207,7 @@ a:active{
     overflow: hidden;
     overflow-x: hidden;
     -moz-overflow: hidden;
+    
 }
 
 .video{
@@ -301,4 +303,12 @@ a:active{
 
 .light-blue{
     background-color: #2a40e7;
+}
+
+/***** BULLSHIT *****/
+
+.dumb-firefox-thing{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
