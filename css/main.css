@@ -179,7 +179,6 @@ a:active{
     height: 100%;
     margin: 0;
     padding: 1rem;
-    z-index: 2;
 }
 
 .img-contain{
@@ -220,7 +219,7 @@ a:active{
             transform: translateX(-12.5%);
     overflow: hidden;
     overflow-x: hidden;
-    z-index: 0;
+    -moz-overflow: hidden;
 }
 
 /***** SLIDES *****/
@@ -306,9 +305,3 @@ a:active{
 }
 
 /***** BULLSHIT *****/
-
-.dumb-firefox-thing{
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
