@@ -59,6 +59,19 @@
         padding: 10rem;
     }
     
+    .video{
+        position: absolute;
+        top: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: none;
+        transform: translateX(none);
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
 }
 
 @media only screen and (min-width: 1600px){
