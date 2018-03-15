@@ -200,12 +200,6 @@ a:active{
     display: block;
 }
 
-
-video source{
-    display: none;
-    z-index: 2 !important;
-}
-
 /***** SLIDES *****/
 
 .fp-slides{
