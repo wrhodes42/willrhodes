@@ -1,6 +1,8 @@
 @font-face{
     font-family: 'gt_america';
-    src: url('/fonts/gt-america-standard-regular.eot');
-    src: url(/fonts/gt-america-standard-regular.ttf');
-    src: url('/fonts/gt-america-standard-regular.woff');
+    src:    url('gt-america-standard-regular.eot') format('eot'),
+            url('gt-america-standard-regular.ttf') format('ttf'),
+            url('gt-america-standard-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
