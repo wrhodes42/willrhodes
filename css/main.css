@@ -96,12 +96,17 @@ a:active{
 }
 
 #info{
-    background-color: blue;
-    text-align: center;
+    background-image: url('/img/sky.jpg');
+    background-size: cover;
+    overflow: hidden;
+
 }
 
-#info h1{
-    margin-bottom: 3rem;
+#info video{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+
 }
 
 /***** PROJECT INFO *****/

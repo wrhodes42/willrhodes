@@ -42,7 +42,7 @@
         background-repeat: repeat;
         margin: none;
     }
-    
+
 }
 
 @media only screen and (min-width: 1400px){
@@ -57,6 +57,21 @@
     
     .img-fit{
         padding: 10rem;
+    }
+    
+    #info video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: none;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     
 }
