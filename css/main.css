@@ -282,7 +282,7 @@ a:active{
     z-index: 3;
 }
 
-.fp-controlArrow.fp-prev:hover{
+.fp-controlArrow.fp-next:hover{
     cursor: url(r-arrow.png), e-resize;
 }
 
