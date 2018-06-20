@@ -78,6 +78,20 @@ $(document).ready(function(){
         setTimeout(dscarousel, 2500); // Change image every 1.5 seconds
     }
     dscarousel();
+    
+    var pmslideIndex = 0;
+    function pmcarousel() {
+        var i;
+        var x = document.getElementsByClassName("pm-img-slider");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        }
+        pmslideIndex++;
+        if (pmslideIndex > x.length) {pmslideIndex = 1} 
+        x[pmslideIndex-1].style.display = "block"; 
+        setTimeout(pmcarousel, 2500); // Change image every 1.5 seconds
+    }
+    pmcarousel();
 
 
 });
