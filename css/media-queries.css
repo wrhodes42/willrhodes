@@ -29,6 +29,10 @@
         font-size: 1.5rem;
     }
     
+    .contain{
+        padding: 5rem;
+    }
+    
     #header h3{
         padding: 1.5rem;
     }
@@ -45,10 +49,10 @@
 
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1024px){
     
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
 		line-height: 1;
     }
     
@@ -73,7 +77,7 @@
     }
     
     #will{
-        width: 250px;
+        width: 225px;
     }
     
     .globe{
@@ -87,12 +91,12 @@
     }
 	
 	.project-data{
-		border: 1px solid white;
-		padding: 0.75rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid white;
 	}
     
     .project-info{
-        padding: 1.5rem;
+        padding: 1.25rem 2rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -114,11 +118,11 @@
 
 @media only screen and (min-width: 1600px){
 	h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     
     h3, .h3{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     #header h3{
@@ -126,7 +130,7 @@
     }
     
     #will{
-        width: 300px;
+        width: 250;
     }
     
     .project-info{
