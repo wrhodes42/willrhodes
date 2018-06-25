@@ -33,10 +33,6 @@
         padding: 1.5rem;
     }
     
-    #will{
-        padding: 1.5rem;
-    }
-    
     .img-repeat{
         background-size: 50%;
         background-repeat: repeat;
@@ -53,6 +49,7 @@
     
     h1{
         font-size: 4rem;
+		line-height: 1;
     }
     
     #info .video-wrapper{
@@ -87,16 +84,14 @@
         display: inline-block;
         width: auto;
         margin: 0;
-        margin-right: 5rem;
-        -ms-flex-preferred-size: 1;
-            flex-basis: 1;
-        -webkit-box-flex: 0.1;
-            -ms-flex-positive: 0.1;
-                flex-grow: 0.1;
     }
+	
+	.project-data{
+		border: 1px solid white;
+		padding: 0.75rem;
+	}
     
     .project-info{
-        border-top: 1px solid white;
         padding: 1.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -110,7 +105,7 @@
                 align-items: center;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
-                justify-content: flex-start;
+                justify-content: space-between;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
     }
@@ -131,7 +126,6 @@
     }
     
     #will{
-        padding: 3rem;
         width: 300px;
     }
     
