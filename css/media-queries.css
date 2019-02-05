@@ -17,6 +17,18 @@
     .browser-bar{
         display: none;
     }
+    
+    .globe{
+        display: none;
+    }
+    
+    .project-info{
+        padding: 1rem;
+    }
+    
+    .project-website a{
+        text-decoration: underline;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -92,7 +104,6 @@
 	
 	.project-data{
         padding: 0.5rem 1rem;
-        border: 1px solid white;
 	}
     
     .project-info{
