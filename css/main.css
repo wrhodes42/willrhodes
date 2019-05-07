@@ -28,7 +28,7 @@ body, html{
 }
 
 h1{
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     font-weight: 400;
     line-height: 1;
     margin: 0;
@@ -166,21 +166,19 @@ a:active{
     -o-transition: none;
     transition: none;
     z-index: 3;
-	border-top: 1px solid white;
 }
 
 .project-header{
-    margin-bottom: 0.5rem;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	width: 100%;
+    margin-bottom: 1rem;
 }
 
 .project-data{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     display: block;
 	width: 100%;
-    margin-bottom: 1.25rem;
 }
 
 .project-website{
@@ -191,27 +189,13 @@ a:active{
 }
 
 .project-website a{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     word-break: keep-all;
     word-wrap: normal;
-    text-decoration: none;
-}
-
-.project-website a:hover{
     text-decoration: underline;
 }
 
-.globe{
-    height: 2rem;
-    display: inline;
-    margin-right: 0.5rem;
-    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
-            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+.project-website a:hover{
+    text-decoration: none;
 }
 
 
