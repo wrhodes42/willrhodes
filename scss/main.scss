@@ -1,0 +1,395 @@
+/***** GLOBAL *****/
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    
+    /* adds animation for all transitions */ 
+    -webkit-transition: .25s ease-in-out; 
+    -o-transition: .25s ease-in-out; 
+    transition: .25s ease-in-out; 
+    -webkit-text-size-adjust: none; 
+}
+
+body, html{
+    color: #ffffff;
+    font-family: "gt_america", "Helvetica", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+h1, .h1{
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    font-family: "gt_america";
+    letter-spacing: -0.5px;
+}
+
+h3, .h3{
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: normal;
+    margin: 0;
+    font-family: "gt_america";
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.3;
+    font-family: "gt_america";
+}
+
+a{
+    line-height: 1.3;
+    color: white;
+    font-family: "gt_america";
+}
+
+a:hover{
+    outline: none;
+    -webkit-transition: none; 
+    -o-transition: none; 
+    transition: none;
+    text-decoration: none;
+}
+
+a:active{
+    outline: none;
+}
+
+button{
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "gt_america";
+    font-weight: normal;
+    font-size: 1.25rem;
+    border: none;
+    text-decoration: underline;
+    
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+
+/***** PROJECT INFO *****/
+
+.project-info{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 1rem;
+    pointer-events: all;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    z-index: 999;
+    width: 100%;
+    color: blue;
+    max-width: 500px;
+    
+    a{
+        color: blue;
+        text-decoration: underline;
+        
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+    .project-info-container{
+        background-color: white;
+        border: 2px solid blue;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+                grid-template-areas: 
+            "marquee marquee marquee marquee marquee marquee marquee marquee marquee marquee marquee marquee"
+            "title title title title title title title title title title title title"
+            "l l l l l l r r r r r r"
+            "link link link link link link link link link num num num"
+            "m m m m m m m m m m m m";
+                
+        &:hover{
+            cursor: -webkit-grab;
+            cursor: grab;
+        }
+        
+        .marquee{
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 12;
+            grid-area: marquee;
+            padding: 0.5rem;
+            border-bottom: 2px solid blue;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .project-title{
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 12;
+            padding: 0.5rem;
+            grid-area: title;
+            border-bottom: 2px solid blue;
+        }
+        
+        .project-data-1{
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 6;
+            grid-area: l;
+            border-right: 2px solid blue;
+            padding: 0.5rem;
+        }
+        
+        .project-data-2{
+            -ms-grid-row: 3;
+            -ms-grid-column: 7;
+            -ms-grid-column-span: 6;
+            grid-area: r;
+            padding: 0.5rem;
+        }
+        
+        .project-website{
+            -ms-grid-row: 4;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 9;
+            grid-area: link;
+            border-top: 2px solid blue;
+            padding: 0.5rem;
+            border-right: 2px solid blue;
+        }
+        
+        .num{
+            -ms-grid-row: 4;
+            -ms-grid-column: 10;
+            -ms-grid-column-span: 3;
+            grid-area: num;
+            border-top: 2px solid blue;
+            padding: 0.5rem;
+        }
+        
+        .menu{
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 12;
+            grid-area: m;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            border-top: 2px solid blue;
+            
+            li{
+                height: 100%;
+                border-right: 2px solid blue;
+                background-color: white;
+                list-style: none;
+                
+                a{
+                    text-decoration: none;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0.5rem;
+                    display: block;
+                }
+                
+                &:last-child{
+                    border-right: none;
+                }
+                
+                &:hover{
+                    color: white;
+                    background-color: blue;
+                }
+                
+                &.active{
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        } 
+    }
+}
+
+/***** SLIDES *****/
+
+.fp-slides{
+    pointer-events: none;
+    z-index: 2;
+}
+ 
+.img-contain{
+    padding: 1rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    div{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img{
+            -o-object-fit: contain;
+               object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+        }
+        
+        .video{
+            -o-object-fit: contain;
+               object-fit: contain;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
+            display: inline-block;
+            
+        }
+        
+        .browser{
+            border: 2px solid blue;
+        }
+    }
+}
+
+.img-cover{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    img{
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
+        width: 100%;
+        height: 100%;
+        height: 100%;
+    }
+}
+
+.img-repeat{
+    width: 100%;
+    height: 100%;
+    background-size: 50%;
+    background-repeat: repeat;
+    background-position: center;
+}
+ 
+
+/* CONTROL ARROWS */
+
+.fp-controlArrow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-color: transparent;
+} 
+
+.fp-controlArrow.fp-prev {
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+    border: none;
+    border-color: transparent;
+}
+
+.fp-controlArrow.fp-prev:hover{
+    cursor: url(/img/l-arrow.png), w-resize;
+}
+
+.fp-controlArrow.fp-next {
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+}
+
+.fp-controlArrow.fp-next:hover{
+    cursor: url(/img/r-arrow.png), e-resize;
+}
+
+body{
+    background-color: blue;
+}
+
+/***** BACKGROUND COLORS *****/
+
+.white{
+    background-color: white;
+}
+
+.mint-green{
+    background-color: #bae9cb;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.grey{
+    background-color: #cacaca;
+}
+
+.dark-grey{
+    background-color: #a8a8a8;
+}
+
+.black{
+	background-color: black;
+}
+
+.peach{
+    background-color: #ffcc99;
+}
+
+.light-blue{
+    background-color: #2a40e7;
+}
+
+.dreamspace-grey{
+    background-color: #f0f0f0;
+}
+
+.ochre{
+    background-color: #F3BA16;
+}
+
+.purple{
+    background-color: #9a00f7;
+}
+
+@import "media-queries";
+  
