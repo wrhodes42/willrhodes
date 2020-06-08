@@ -41,7 +41,7 @@ var brm = {
 var scicon = {
     projectID : "scicon",
     projectTitle : "SCIENTIFIC CONTROVERSIES",
-    projectData1 : "2016-2018<br>LOGO, PRINT, WEB",
+    projectData1 : "2016-2018<br>3D ANIMATION",
     projectData2 : " ",
     projectWebsite : "<a href='https://pioneerworks.org/series/scientific-controversies/' target='_blank'>PIONEERWORKS.ORG</a>"
 }
