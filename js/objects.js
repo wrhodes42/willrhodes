@@ -78,12 +78,12 @@ var dreamspace = {
     projectWebsite : "<a href='http://www.dream-space.net/' target='_blank'>DREAM-SPACE.NET</a>"
 }
 
-var mvr = {
-    projectID : "mvr",
-    projectTitle : "MVR",
-    projectData1 : "2016-2018<br>IDENTITY, WEB",
-    projectData2 : " ",
-    projectWebsite : "<a href='https://pioneerworks.org/series/mvr/' target='_blank'>PIONEERWORKS.ORG</a>"
+var primos = {
+    projectID : "primos",
+    projectTitle : "PRIMO'S",
+    projectData1 : "2019<br>WEB DESIGN &amp; DEVELOPMENT",
+    projectData2 : "",
+    projectWebsite : "<a href='https://www.primostribeca.com/' target='_blank'>PRIMOSTRIBECA.COM</a>"
 }
 
 var mgmt = {
@@ -96,4 +96,4 @@ var mgmt = {
 
 
 
-var projectInfoObjects = [pioneerWorks, rumor, aasf, space, brm, scicon, pm, ss, larrie, dreamspace, mvr, mgmt];
+var projectInfoObjects = [pioneerWorks, rumor, aasf, space, brm, scicon, pm, ss, larrie, dreamspace, primos, mgmt];

@@ -302,6 +302,9 @@ body {
 .purple {
   background-color: #9a00f7; }
 
+.red {
+  background-color: #df1f26; }
+
 @media only screen and (min-width: 500px) {
   .img-contain {
     padding: 3rem; }
