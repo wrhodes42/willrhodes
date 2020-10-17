@@ -1,0 +1,22 @@
+#game{
+	background-color: white;
+	font-family: 'helvetica', sans-serif;
+	font-size: 10px;
+	color: black;
+	text-shadow: none;
+	font-weight: normal;
+}
+
+#box-buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 2rem;
+}
+
+.theButton{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 5rem;
+}
