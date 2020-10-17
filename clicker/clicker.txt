@@ -9,7 +9,7 @@ Let's make a game!
 Settings
 	building cost increase:115%
 	building cost refund:50%
-	stylesheet:https://pastebin.com/raw/v2QNMBHj
+	stylesheet:style.txt
 
 Layout
   use default
