@@ -1,0 +1,41 @@
+Let's make a game!
+	name:Button Clicker
+	by:Will Rhodes
+	desc:Make Button Go Click
+	created:10/17/2020
+	updated:10/17/2020
+	version:1
+    
+Settings
+	building cost increase:115%
+	building cost refund:50%
+	stylesheet:style.txt
+
+Layout
+    use default
+    
+Buttons
+    *bigButton
+        
+Resources
+    *juice
+        name: juice
+        desc: Get that juice!
+        class: juice
+        show earned
+
+Buildings
+    *juiceFactory
+        name: Juice Factory
+        desc: This isn't your first rodeo. Produces 1 juice every 10 seconds.
+        cost: 15 juice
+        on tick: yield 0.1 juice
+        unlocked
+        
+Upgrades
+    *blue
+        name:Blue
+		desc:Get some blue juice.<//><b>Effect:</b><.>+1 juice/click
+		cost:100 juice
+		passive:increase juice yield of bigButton by 1
+		req:10 juice:earned
