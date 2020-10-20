@@ -1,8 +1,9 @@
-#game{
+html, *, *::after, *::before{
 	background-color: white;
 	font-family: 'helvetica', sans-serif;
 	font-size: 10px;
 	color: black;
+    background-color: transparent;
 	text-shadow: none;
 	font-weight: normal;
 }
@@ -16,7 +17,14 @@
 
 .theButton{
     background-color: black;
-    color: white;
     border-radius: 100%;
-    padding: 5rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theButton .thing-text{
+    color: white;
 }
