@@ -1,9 +1,8 @@
-html, *, *::after, *::before{
+#game{
 	background-color: white;
 	font-family: 'helvetica', sans-serif;
 	font-size: 10px;
 	color: black;
-    background-color: transparent;
 	text-shadow: none;
 	font-weight: normal;
 }
