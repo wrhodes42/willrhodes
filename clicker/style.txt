@@ -1,4 +1,4 @@
-#game{
+#content{
 	background-color: white;
 	font-family: 'helvetica', sans-serif;
 	font-size: 10px;
