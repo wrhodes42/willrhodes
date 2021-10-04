@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Projects</h1>
     <div class="posts">
       <div class="loading" v-if="loading">Loading...</div>
       <div v-if="error" class="error">
@@ -11,7 +12,6 @@
             <h2>{{ post.title }}</h2>
           </router-link>
           <p>{{post.excerpt}}</p>
-          <hr />
         </div>
       </div>
     </div>
@@ -56,3 +56,44 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+  .home{
+    max-width: 60rem;
+    margin: auto;
+  }
+
+  h1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
+  }
+
+  .posts{
+    grid-column: 1 / span 2;
+  }
+
+  .post-item{
+    padding: 1rem;
+    position: relative;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    display: inline;
+  }
+
+  h2:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+  }
+
+</style>

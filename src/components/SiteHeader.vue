@@ -1,8 +1,8 @@
 <template>
-    <marquee-text :repeat="4">
+    <marquee-text class="marquee" :repeat="6" :paused = "hover" @mouseover="hover = true" @mouseleave="hover = false">
         <span>Will Rhodes</span>
-        <span>Design Portfolio</span>
         <span><router-link to="/">Projects</router-link></span>
+        <span>Design Portfolio</span>
         <span><a href="mailto:will@willrhodes.blue">will@willrhodes.blue</a></span> 
     </marquee-text>
 </template>
@@ -13,6 +13,11 @@ export default ({
     name: 'SiteHeader',
     components: {
         MarqueeText
+    },
+    data() {
+        return {
+            hover: false,
+        };
     }
 })
 </script>
@@ -21,6 +26,11 @@ export default ({
 
     span{
         margin-right: 3rem;
+    }
+
+    .marquee{
+        padding: 1rem;
+        border-bottom: 2px solid black;
     }
 
 </style>
