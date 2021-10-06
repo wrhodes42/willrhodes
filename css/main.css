@@ -23,6 +23,10 @@ a {
 
 .header {
   display: block;
+  clear: all;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
   border-bottom: 2px solid black; }
   .header span {
     margin-right: 1rem; }
