@@ -5,29 +5,34 @@ html, body, *, *:after, *:before{
 }
 
 html{
-    font-size: 8px;
+    font-size: 10px;
     font-family: 'suisse-medium';
 }
  
 body{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 h1, .h1, h2, .h2, h3, .h3, p, a{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 a{
-    color: blue;
+    color: black;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid black;
     
     &:hover{
         border-bottom: 2px solid blue;
         color: blue;
     }
+}
 
-    &:visited{
-        color: blue;
+.header{
+    display: block;
+    border-bottom: 2px solid black;
+
+    span{
+        margin-right: 1rem;
     }
 }
