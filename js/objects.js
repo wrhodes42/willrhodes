@@ -11,7 +11,7 @@ var rumor = {
     projectTitle : "RUMOR",
     projectData1 : "2019<br>WEB, PRINT",
     projectData2 : "WITH CARLY RICHMAN<br> &amp; MICHAELA FRIEDBERG",
-    projectWebsite : "<a href='https://www.rumor.farm' target='_blank'>RUMOR.FARM</a>"
+    projectWebsite : "<a href='https://www.rumor.reviews' target='_blank'>RUMOR.REVIEWS</a>"
 }
 
 var aasf = {
