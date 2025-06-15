@@ -3,7 +3,6 @@ var Fullpage = new fullpage
     '#fullpage', 
     {
         licenseKey: 'null',
-        sectionsColor: ['#4BBFC3', '#7BAABE', '#ccddff'],
         verticalCentered: true,
         controlArrows: true,
         slidesNavigation: false,
@@ -12,3 +11,11 @@ var Fullpage = new fullpage
         resetSlidersKey: 'd2lsbHJob2Rlcy5ibHVlXzhuV2NtVnpaWFJUYkdsa1pYSnpXcks='
     }
 );
+
+$(document).on('click', '#move-up', function(){
+  fullpage_api.moveSectionUp();
+});
+
+$(document).on('click', '#move-down', function(){
+  fullpage_api.moveSectionDown();
+});

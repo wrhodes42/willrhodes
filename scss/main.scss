@@ -1,3 +1,104 @@
-.slide{
-    text-align: center;
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    
+    .fp-overflow{
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    } 
+}
+
+.contain{
+    width: 100%;
+    height: 100%;
+
+    .fp-overflow{
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+}
+
+.fp-arrow{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    top: 10%;
+    margin: 0;
+    z-index: 3;
+}
+
+.fp-prev{
+    left: 0;
+
+    &:hover{
+        cursor: url(/images/eye/w.png), w-resize;
+    }
+}
+
+.fp-next{
+    right: 0;
+
+    &:hover{
+        cursor: url(/images/eye/e.png), e-resize;
+    }
+}
+
+.section-nav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    z-index: 3;
+}
+
+#move-up{
+    top: 0;
+
+    &:hover{
+        cursor: url(/images/eye/n.png), n-resize;
+    }
+}
+
+#move-down{
+    bottom: 0;
+
+    &:hover{
+        cursor: url(/images/eye/s.png), s-resize;
+    }
+}
+
+@media (hover: none){
+    .fp-controlArrow{
+        display: none;
+    }
+
+    .section-nav{
+        display: none;
+    }
 }
