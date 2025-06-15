@@ -2,7 +2,7 @@ var Fullpage = new fullpage
 (
     '#fullpage', 
     {
-        licenseKey: 'null',
+        licenseKey: 'NTI26-ENYHI-9IK0J-NJ82I-WKRXM',
         verticalCentered: true,
         controlArrows: true,
         slidesNavigation: false,
