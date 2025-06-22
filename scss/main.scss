@@ -1,45 +1,103 @@
+@font-face {
+  font-family: suisse;
+  src: url(/fonts/SuisseIntl-Regular.otf);
+}
+
 html{
     box-sizing: border-box;
 }
 
 body{
+    background-color: blue;
+    color: white;
+    font-family: 'suisse', Helvetica, Arial, sans-serif;
+    line-height: 1.25;
+    font-size: 10pt;
+}
+
+a{
+    color: white;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
     background-color: black;
 }
 
-.cover{
-    width: 100%;
-    height: 100%;
-    
-    .fp-overflow{
-        width: 100%;
-        height: 100%;
-    }
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    } 
+.slide{
+    position: relative;
 }
 
-.contain{
+.marquee{
+    position: fixed;
+    display: block;
+    width: 100vw;
+    z-index: 4;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+#contact-marquee{  
+    top: 0;
+}
+
+#project-marquee{
+    bottom: 0;
+}
+
+.diptych{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .half{
+        flex-basis: 1;
+        width: 100%;
+        height: 50%;
+        display: inline-block;
+        position: relative;
+    }
+}
+
+.caption{
+    padding: 1.5rem;
+    margin: 0;    
+}
+
+.img-cover{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
 
-    .fp-overflow{
-        width: 100%;
-        height: 100%;
-    }
+.img-contain{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    position: relative;
+}
 
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-        display: block;
-    }
+.img-inset{
+    width: 90%;
+    height: 85%;
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fp-arrow{
@@ -47,8 +105,8 @@ body{
     background-color: transparent;
     position: absolute;
     width: 50%;
-    height: 80%;
-    top: 10%;
+    height: 70%;
+    top: 15%;
     margin: 0;
     z-index: 3;
 }
@@ -57,7 +115,11 @@ body{
     left: 0;
 
     &:hover{
-        cursor: url(/images/eye/w.png), w-resize;
+        cursor: url(/images/eye/w-white.png) 64 36, w-resize;
+    }
+
+        &:active{
+        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
     }
 }
 
@@ -65,14 +127,18 @@ body{
     right: 0;
 
     &:hover{
-        cursor: url(/images/eye/e.png), e-resize;
+        cursor: url(/images/eye/e-white.png) 64 36, e-resize;
+    }
+
+        &:active{
+        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
     }
 }
 
 .section-nav{
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 15%;
     left: 0;
     z-index: 3;
 }
@@ -81,7 +147,11 @@ body{
     top: 0;
 
     &:hover{
-        cursor: url(/images/eye/n.png), n-resize;
+        cursor: url(/images/eye/n-white.png) 64 36, n-resize;
+    }
+
+    &:active{
+        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
     }
 }
 
@@ -89,16 +159,12 @@ body{
     bottom: 0;
 
     &:hover{
-        cursor: url(/images/eye/s.png), s-resize;
+        cursor: url(/images/eye/s-white.png) 64 36, s-resize;
+    }
+
+    &:active{
+        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
     }
 }
 
-@media (hover: none){
-    .fp-controlArrow{
-        display: none;
-    }
-
-    .section-nav{
-        display: none;
-    }
-}
+@import "_media-queries";
