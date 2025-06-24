@@ -1,0 +1,174 @@
+@font-face {
+  font-family: suisse;
+  src: url(/fonts/SuisseIntl-Regular.otf); }
+@font-face {
+  font-family: nb;
+  src: url(/fonts/NBInternationalRegular.ttf); }
+html {
+  box-sizing: border-box; }
+
+body {
+  background-color: #0000ff;
+  color: #ffffff;
+  font-family: 'suisse', Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+  font-size: 10pt; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    text-decoration: none;
+    z-index: 999 !important; }
+
+.white {
+  background-color: white; }
+
+#fullpage {
+  z-index: 5; }
+
+.slide {
+  position: relative;
+  background-color: transparent;
+  pointer-events: none; }
+
+.marquee {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  padding: 0.4rem;
+  z-index: 4; }
+
+#contact-marquee {
+  top: 0; }
+
+.project-marquee {
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none; }
+
+.diptych {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .diptych .half {
+    flex-basis: 1;
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    position: relative; }
+
+.caption {
+  padding: 1.5rem;
+  margin: 0; }
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative; }
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  position: relative; }
+
+.img-inset {
+  width: 70%;
+  height: 70%;
+  display: block;
+  position: absolute;
+  object-fit: contain;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.fp-arrow {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  top: 15%;
+  margin: 0;
+  z-index: 3; }
+
+.fp-prev {
+  left: 0; }
+  .fp-prev:hover {
+    cursor: url(/images/eye/w.png) 64 36, w-resize; }
+  .fp-prev:active {
+    cursor: url(/images/eye/blink.png) 64 36, w-resize; }
+
+.fp-next {
+  right: 0; }
+  .fp-next:hover {
+    cursor: url(/images/eye/e.png) 64 36, e-resize; }
+  .fp-next:active {
+    cursor: url(/images/eye/blink.png) 64 36, w-resize; }
+
+.section-nav {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  left: 0;
+  z-index: 3; }
+
+#move-up {
+  top: 0; }
+  #move-up:hover {
+    cursor: url(/images/eye/n.png) 64 36, n-resize; }
+  #move-up:active {
+    cursor: url(/images/eye/blink.png) 64 36, w-resize; }
+
+#move-down {
+  bottom: 0; }
+  #move-down:hover {
+    cursor: url(/images/eye/s.png) 64 36, s-resize; }
+  #move-down:active {
+    cursor: url(/images/eye/blink.png) 64 36, w-resize; }
+
+@media screen and (orientation: landscape) {
+  .diptych {
+    flex-direction: row; }
+    .diptych .half {
+      width: 50%;
+      height: 100%; }
+      .diptych .half p {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%); }
+
+  .caption {
+    max-width: 50vw;
+    margin: auto; }
+
+  .project-info-container {
+    max-width: 50vw;
+    margin: auto; } }
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 12pt; }
+
+  .marquee {
+    font-size: 0.75rem; }
+
+  .caption {
+    padding: 2rem; }
+
+  .img-inset {
+    width: 90%;
+    height: 90%; } }
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16pt; }
+
+  .caption {
+    padding: 4rem; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 22pt; } }
