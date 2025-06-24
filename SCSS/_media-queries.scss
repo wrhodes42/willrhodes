@@ -61,6 +61,10 @@
 
 @media (hover: none){
 
+    #fullpage{
+        pointer-events: all;
+    }
+
     .section-nav{
         display: none;
     }
