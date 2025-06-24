@@ -3,53 +3,68 @@
   src: url(/fonts/SuisseIntl-Regular.otf);
 }
 
+@font-face {
+  font-family: nb;
+  src: url(/fonts/NBInternationalRegular.ttf);
+}
+
+$blue: #0000ff;
+$black: #000000;
+$white: #ffffff;
+
 html{
     box-sizing: border-box;
 }
 
 body{
-    background-color: blue;
-    color: white;
+    background-color: $blue;
+    color: $white;
     font-family: 'suisse', Helvetica, Arial, sans-serif;
     line-height: 1.25;
     font-size: 10pt;
 }
 
 a{
-    color: white;
+    color: $white;
 
     &:hover{
         text-decoration: none;
+        z-index: 999 !important;
     }
 }
 
-.blue{
-    background-color: blue;
+.white{
+    background-color: white;
 }
 
-.black{
-    background-color: black;
+#fullpage{
+    z-index: 5;
+    pointer-events: none;
+
 }
 
 .slide{
     position: relative;
+    background-color: transparent;
+    pointer-events: none;
 }
 
 .marquee{
     position: fixed;
     display: block;
     width: 100vw;
-    z-index: 4;
-    font-size: 1rem;
     padding: 0.4rem;
+    z-index: 4;
 }
 
 #contact-marquee{  
     top: 0;
 }
 
-#project-marquee{
+.project-marquee{
     bottom: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .diptych{
@@ -68,7 +83,7 @@ a{
 
 .caption{
     padding: 1.5rem;
-    margin: 0;    
+    margin: 0;
 }
 
 .img-cover{
@@ -89,8 +104,8 @@ a{
 }
 
 .img-inset{
-    width: 90%;
-    height: 85%;
+    width: 70%;
+    height: 70%;
     display: block;
     position: absolute;
     object-fit: contain;
@@ -109,17 +124,18 @@ a{
     top: 15%;
     margin: 0;
     z-index: 3;
+    pointer-events: all;
 }
 
 .fp-prev{
     left: 0;
 
     &:hover{
-        cursor: url(/images/eye/w-white.png) 64 36, w-resize;
+        cursor: url(/images/eye/w.png) 64 36, w-resize;
     }
 
         &:active{
-        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
+        cursor: url(/images/eye/blink.png) 64 36, w-resize;
     }
 }
 
@@ -127,11 +143,11 @@ a{
     right: 0;
 
     &:hover{
-        cursor: url(/images/eye/e-white.png) 64 36, e-resize;
+        cursor: url(/images/eye/e.png) 64 36, e-resize;
     }
 
         &:active{
-        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
+        cursor: url(/images/eye/blink.png) 64 36, w-resize;
     }
 }
 
@@ -141,17 +157,18 @@ a{
     height: 15%;
     left: 0;
     z-index: 3;
+    pointer-events: all;
 }
 
 #move-up{
     top: 0;
 
     &:hover{
-        cursor: url(/images/eye/n-white.png) 64 36, n-resize;
+        cursor: url(/images/eye/n.png) 64 36, n-resize;
     }
 
     &:active{
-        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
+        cursor: url(/images/eye/blink.png) 64 36, w-resize;
     }
 }
 
@@ -159,11 +176,11 @@ a{
     bottom: 0;
 
     &:hover{
-        cursor: url(/images/eye/s-white.png) 64 36, s-resize;
+        cursor: url(/images/eye/s.png) 64 36, s-resize;
     }
 
     &:active{
-        cursor: url(/images/eye/blink-white.png) 64 36, w-resize;
+        cursor: url(/images/eye/blink.png) 64 36, w-resize;
     }
 }
 

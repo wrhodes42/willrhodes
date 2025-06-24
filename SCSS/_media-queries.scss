@@ -24,9 +24,9 @@
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
     body{
-        font-size: 16pt;
+        font-size: 12pt;
     } 
 
     .marquee{
@@ -36,15 +36,26 @@
     .caption{
         padding: 2rem;
     }
+
+    .img-inset{
+        width: 90%;
+        height: 90%;
+    }
 }
 
 @media screen and (min-width: 1200px){
     body{
-        font-size: 24pt;
+        font-size: 16pt;
     } 
 
     .caption{
         padding: 4rem;
+    }
+}
+
+@media  screen and (min-width: 1600px) {
+    body{
+        font-size: 22pt;
     }
 }
 
