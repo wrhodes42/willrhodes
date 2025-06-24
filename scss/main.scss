@@ -39,8 +39,7 @@ a{
 
 #fullpage{
     z-index: 5;
-    pointer-events: none;
-
+    //pointer-events: none;
 }
 
 .slide{
@@ -124,7 +123,6 @@ a{
     top: 15%;
     margin: 0;
     z-index: 3;
-    pointer-events: all;
 }
 
 .fp-prev{
@@ -157,7 +155,6 @@ a{
     height: 15%;
     left: 0;
     z-index: 3;
-    pointer-events: all;
 }
 
 #move-up{
