@@ -24,12 +24,12 @@ a {
   background-color: white; }
 
 #fullpage {
-  z-index: 5; }
+  z-index: 5;
+  pointer-events: none; }
 
 .slide {
   position: relative;
-  background-color: transparent;
-  pointer-events: none; }
+  background-color: transparent; }
 
 .marquee {
   position: fixed;
@@ -95,7 +95,8 @@ a {
   height: 70%;
   top: 15%;
   margin: 0;
-  z-index: 3; }
+  z-index: 3;
+  pointer-events: all; }
 
 .fp-prev {
   left: 0; }
