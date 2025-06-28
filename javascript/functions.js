@@ -9,8 +9,8 @@ var Fullpage = new fullpage
         continuousVertical: false,
         scrollOverflow: false,
         scrollingSpeed: 400,
-        resetSliders: true,
-        resetSlidersKey: 'd2lsbHJob2Rlcy5ibHVlXzhuV2NtVnpaWFJUYkdsa1pYSnpXcks=',
+        //resetSliders: true,
+        //resetSlidersKey: 'd2lsbHJob2Rlcy5ibHVlXzhuV2NtVnpaWFJUYkdsa1pYSnpXcks=',
         afterLoad: function(){
             UpdateMarquees();
         }
