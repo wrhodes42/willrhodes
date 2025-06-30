@@ -6,7 +6,7 @@ var Fullpage = new fullpage
         verticalCentered: true,
         controlArrows: true,
         slidesNavigation: false,
-        continuousVertical: false,
+        continuousVertical: true,
         scrollOverflow: false,
         scrollingSpeed: 400,
         //resetSliders: true,
