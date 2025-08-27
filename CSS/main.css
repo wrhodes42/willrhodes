@@ -83,9 +83,9 @@ a {
   position: absolute;
   object-fit: contain;
   object-position: center;
-  top: 50%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -100%); }
 
 .fp-arrow {
   border: none;
@@ -150,7 +150,11 @@ a {
 
   .project-info-container {
     max-width: 50vw;
-    margin: auto; } }
+    margin: auto; }
+
+  .img-inset {
+    top: 50%;
+    transform: translate(-50%, -50%); } }
 @media screen and (min-width: 800px) {
   body {
     font-size: 12pt; }
@@ -169,10 +173,10 @@ a {
     font-size: 16pt; }
 
   .caption {
-    padding: 4rem; } }
+    padding: 5rem; } }
 @media screen and (min-width: 1600px) {
   body {
-    font-size: 22pt; } }
+    font-size: 24pt; } }
 @media (hover: none) {
   #fullpage {
     pointer-events: all; }
