@@ -36,7 +36,11 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
+    html{
+        font-size: 15px;
+    }
+
     .project-info {
         .project-title, .project-description{
             grid-column: auto / span 2;
@@ -46,4 +50,10 @@
             grid-column: auto / span 1;
         }
     }
+}
+
+@media screen and (min-width: 1500px) {
+    html{
+            font-size: 20px;
+        }
 }

@@ -5,19 +5,22 @@
   font-family: nb;
   src: url(/fonts/NBInternationalRegular.ttf); }
 .acid {
-  color: #99ff00; }
+  color: #c3ff00; }
 
-.peach {
-  color: peachpuff; }
+.blue {
+  color: #1c5cff; }
 
-.yellow {
-  color: yellow; }
+.green {
+  color: #00a300; }
 
 .red {
-  color: #ff3359; }
+  color: #ff2a51; }
+
+.ochre {
+  color: #c9861b; }
 
 html {
-  font-size: 10pt;
+  font-size: 12px;
   line-height: 1.25; }
   html *, html *:before, html *:after {
     margin: 0;
@@ -26,7 +29,7 @@ html {
 
 body {
   background-color: #000000;
-  color: #002fff;
+  color: #0b37ff;
   font-family: 'suisse', Helvetica, Arial, sans-serif; }
 
 h1 {
@@ -50,31 +53,34 @@ a {
   padding: 1rem; }
 
 .project-info {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   position: sticky;
   top: 0;
   background-color: black;
-  min-height: 94px;
+  min-height: 120px;
   z-index: 0; }
   .project-info * {
     display: inline;
     grid-column: auto / span 6; }
 
 .project-content {
-  margin-bottom: 9rem;
+  margin-bottom: 18rem;
   z-index: 1;
   position: relative; }
-  .project-content img {
+  .project-content img, .project-content video {
     display: inline;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: center; }
+    object-position: top; }
   .project-content .col-1 {
     grid-column: auto / span 3; }
     @media screen and (min-width: 500px) {
       .project-content .col-1 {
         grid-column: auto / span 2; } }
+    @media screen and (min-width: 900px) {
+      .project-content .col-1 {
+        grid-column: auto / span 1; } }
   .project-content .col-2 {
     grid-column: auto / span 3; }
     @media screen and (min-width: 500px) {
@@ -107,8 +113,14 @@ a {
     grid-column: auto / span 4; }
   .project-content .img-xl {
     grid-column: auto / span 6; } }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 15px; }
+
   .project-info .project-title, .project-info .project-description {
     grid-column: auto / span 2; }
   .project-info .project-link, .project-info .project-details {
     grid-column: auto / span 1; } }
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 20px; } }

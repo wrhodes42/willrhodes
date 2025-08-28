@@ -8,28 +8,32 @@
   src: url(/fonts/NBInternationalRegular.ttf);
 }
 
-$blue: #002fff;
+$blue: #0b37ff;
 $black: #000000;
 $white: #ffffff;
 
 .acid{
-    color: #99ff00;
+    color: #c3ff00;
 }
 
-.peach{
-    color: peachpuff;
+.blue{
+    color: #1c5cff;
 }
 
-.yellow{
-    color: yellow;
+.green{
+    color: rgb(0, 163, 0);
 }
 
 .red{
-    color: rgb(255, 51, 89);
+    color: rgb(255, 42, 81);
+}
+
+.ochre{
+    color: #c9861b;
 }
 
 html{
-    font-size: 10pt;
+    font-size: 12px;
     line-height: 1.25;
 
     *, *:before, *:after{
@@ -72,11 +76,11 @@ a{
 }
 
 .project-info{
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     position: sticky;
     top: 0;
     background-color: black;
-    min-height: 94px;
+    min-height: 120px;
     z-index: 0;
     *{
         display: inline;
@@ -85,16 +89,16 @@ a{
 }
 
 .project-content{
-    margin-bottom: 9rem;
+    margin-bottom: 18rem;
     z-index: 1;
     position: relative;
 
-    img{
+    img, video{
         display: inline;
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: center;
+        object-position: top;
     }
 
     .col-1{
@@ -104,6 +108,9 @@ a{
             grid-column: auto / span 2;
         }
         
+        @media screen and (min-width: 900px){
+            grid-column: auto / span 1;
+        }
     }
 
     .col-2{
