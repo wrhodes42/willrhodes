@@ -1,80 +1,49 @@
+//orientation
 @media screen and (orientation: landscape) {
-    .diptych{
-        flex-direction: row;
-        .half{
-            width: 50%;
-            height: 100%;
+    
+}
 
-            p{
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
-            }
+//interaction
+@media (hover: none){
+
+}
+
+//size
+@media screen and (min-width: 500px) {
+    
+    .project-info{
+        *{
+            grid-column: auto / span 3;
         }
     }
 
-    .caption{
-        max-width: 50vw;
-        margin: auto;
-    }
+    .project-content{
+        .img-xs{
+            grid-column: auto / span 2;
+        }
 
-    .project-info-container{
-         max-width: 50vw; 
-         margin: auto;
-    }
+        .img-s{
+            grid-column: auto / span 3;
+        }
 
-    .img-inset{
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
+        .img-l{
+            grid-column: auto / span 4;
+        }
 
-@media screen and (min-width: 800px){
-    body{
-        font-size: 12pt;
-    } 
-
-    .marquee{
-        font-size: 0.75rem;
-    }
-
-    .caption{
-        padding: 2rem;
-    }
-
-    .img-inset{
-        width: 90%;
-        height: 90%;
+        .img-xl{
+            grid-column: auto / span 6;
+        }
     }
 }
 
-@media screen and (min-width: 1200px){
-    body{
-        font-size: 16pt;
-    } 
+@media screen and (min-width: 900px) {
+    .project-info {
+        .project-title, .project-description{
+            grid-column: auto / span 2;
+        }
 
-    .caption{
-        padding: 5rem;
-    }
-}
-
-@media  screen and (min-width: 1600px) {
-    body{
-        font-size: 24pt;
-    }
-}
-
-@media (hover: none){
-
-    #fullpage{
-        pointer-events: all;
-    }
-
-    .section-nav{
-        display: none;
-    }
-
-    .fp-arrow{
-        display: none;
+        .project-link, .project-details{
+            grid-column: auto / span 1;
+        }
     }
 }
