@@ -5,16 +5,19 @@
   font-family: nb;
   src: url(/fonts/NBInternationalRegular.ttf); }
 .acid {
-  color: #c3ff00; }
+  color: #CAFF00; }
 
 .blue {
-  color: #1c5cff; }
+  color: #236DFF; }
 
 .green {
   color: #00a300; }
 
+.pink {
+  color: #FFCDE2; }
+
 .red {
-  color: #ff2a51; }
+  color: #FF523D; }
 
 .ochre {
   color: #c9861b; }
@@ -48,16 +51,15 @@ a {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  padding: 1rem; }
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2rem; }
 
 .project-info {
   margin-bottom: 6rem;
   position: sticky;
   top: 0;
   background-color: black;
-  min-height: 120px;
   z-index: 0; }
   .project-info * {
     display: inline;

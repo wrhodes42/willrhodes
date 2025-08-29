@@ -13,19 +13,23 @@ $black: #000000;
 $white: #ffffff;
 
 .acid{
-    color: #c3ff00;
+    color: #CAFF00;
 }
 
 .blue{
-    color: #1c5cff;
+    color: #236DFF;
 }
 
 .green{
     color: rgb(0, 163, 0);
 }
 
+.pink{
+    color: #FFCDE2;
+}
+
 .red{
-    color: rgb(255, 42, 81);
+    color: #FF523D;
 }
 
 .ochre{
@@ -70,9 +74,9 @@ a{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    padding: 1rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
 }
 
 .project-info{
@@ -80,7 +84,6 @@ a{
     position: sticky;
     top: 0;
     background-color: black;
-    min-height: 120px;
     z-index: 0;
     *{
         display: inline;
