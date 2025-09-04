@@ -50,7 +50,7 @@ html{
 body{
     background-color: $black;
     color: $blue;
-    font-family: 'suisse', Helvetica, Arial, sans-serif;
+    font-family: 'nb', Helvetica, Arial, sans-serif;
 }
 
 h1{
@@ -80,18 +80,19 @@ a{
 }
 
 .project-info{
-    margin-bottom: 6rem;
-    top: 0;
-    background-color: black;
-    z-index: 0;
-    *{
-        display: inline;
-        grid-column: auto / span 6;
+    margin-bottom: 4rem;
+    
+    .grid {
+        row-gap: .5rem;
+        *{
+            display: inline;
+            grid-column: auto / span 6;
+        }
     }
 }
 
 .project-content{
-    margin-bottom: 18rem;
+    margin-bottom: 12rem;
     z-index: 1;
     position: relative;
 

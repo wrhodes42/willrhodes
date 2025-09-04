@@ -1,7 +1,4 @@
 //orientation
-@media screen and (orientation: landscape) {
-    
-}
 
 //interaction
 @media (hover: none){
@@ -12,10 +9,15 @@
 @media screen and (min-width: 500px) {
     
     .project-info{
-        *{
-            grid-column: auto / span 3;
+        .grid {
+            row-gap: 2rem;
+
+            *{
+                grid-column: auto / span 3;
+            }
         }
     }
+    
 
     .project-content{
         .img-xs{

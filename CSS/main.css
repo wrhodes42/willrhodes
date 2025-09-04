@@ -33,7 +33,7 @@ html {
 body {
   background-color: #000000;
   color: #0b37ff;
-  font-family: 'suisse', Helvetica, Arial, sans-serif; }
+  font-family: 'nb', Helvetica, Arial, sans-serif; }
 
 h1 {
   font-size: 1rem;
@@ -56,16 +56,15 @@ a {
   padding: 2rem; }
 
 .project-info {
-  margin-bottom: 6rem;
-  top: 0;
-  background-color: black;
-  z-index: 0; }
-  .project-info * {
-    display: inline;
-    grid-column: auto / span 6; }
+  margin-bottom: 4rem; }
+  .project-info .grid {
+    row-gap: .5rem; }
+    .project-info .grid * {
+      display: inline;
+      grid-column: auto / span 6; }
 
 .project-content {
-  margin-bottom: 18rem;
+  margin-bottom: 12rem;
   z-index: 1;
   position: relative; }
   .project-content img, .project-content video {
@@ -103,8 +102,10 @@ a {
     grid-column: auto / span 6; }
 
 @media screen and (min-width: 500px) {
-  .project-info * {
-    grid-column: auto / span 3; }
+  .project-info .grid {
+    row-gap: 2rem; }
+    .project-info .grid * {
+      grid-column: auto / span 3; }
 
   .project-content .img-xs {
     grid-column: auto / span 2; }
