@@ -13,8 +13,8 @@
 .green {
   color: #00a300; }
 
-.pink {
-  color: #FFCDE2; }
+.cyan {
+  color: #67fff7; }
 
 .red {
   color: #FF523D; }
@@ -56,7 +56,7 @@ a {
   padding: 2rem; }
 
 .project-info {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   .project-info .grid {
     row-gap: .5rem; }
     .project-info .grid * {
