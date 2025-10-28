@@ -13,27 +13,8 @@
             row-gap: 2rem;
 
             *{
-                grid-column: auto / span 3;
+                grid-column: auto / span 6;
             }
-        }
-    }
-    
-
-    .project-content{
-        .img-xs{
-            grid-column: auto / span 2;
-        }
-
-        .img-s{
-            grid-column: auto / span 3;
-        }
-
-        .img-l{
-            grid-column: auto / span 4;
-        }
-
-        .img-xl{
-            grid-column: auto / span 6;
         }
     }
 }
@@ -45,11 +26,11 @@
 
     .project-info {
         .project-title, .project-description{
-            grid-column: auto / span 2;
+            grid-column: auto / span 4;
         }
 
         .project-link, .project-details{
-            grid-column: auto / span 1;
+            grid-column: auto / span 2;
         }
     }
 }
