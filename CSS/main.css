@@ -1,9 +1,6 @@
 @font-face {
   font-family: suisse;
   src: url(/fonts/SuisseIntl-Regular.otf); }
-@font-face {
-  font-family: nb;
-  src: url(/fonts/NBInternationalRegular.ttf); }
 .acid {
   color: #CAFF00; }
 
@@ -86,49 +83,49 @@ a {
         grid-column: auto / span 1; } }
   .project-content .col-2 {
     grid-column: auto / span 6; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-2 {
         grid-column: auto / span 2; } }
   .project-content .col-3 {
     grid-column: auto / span 6; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-3 {
         grid-column: auto / span 3; } }
   .project-content .col-4 {
     grid-column: auto / span 6; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-4 {
         grid-column: auto / span 4; } }
   .project-content .col-5 {
     grid-column: auto / span 6; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-5 {
         grid-column: auto / span 5; } }
   .project-content .col-6 {
     grid-column: auto / span 6; }
   .project-content .col-7 {
     grid-column: auto / span 12; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-7 {
         grid-column: auto / span 7; } }
   .project-content .col-8 {
     grid-column: auto / span 12; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-8 {
         grid-column: auto / span 8; } }
   .project-content .col-9 {
     grid-column: auto / span 12; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-9 {
         grid-column: auto / span 9; } }
   .project-content .col-10 {
     grid-column: auto / span 12; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-10 {
         grid-column: auto / span 10; } }
   .project-content .col-11 {
     grid-column: auto / span 12; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 900px) {
       .project-content .col-11 {
         grid-column: auto / span 11; } }
   .project-content .col-12 {

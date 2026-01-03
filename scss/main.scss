@@ -3,11 +3,6 @@
   src: url(/fonts/SuisseIntl-Regular.otf);
 }
 
-@font-face {
-  font-family: nb;
-  src: url(/fonts/NBInternationalRegular.ttf);
-}
-
 $blue: #0b37ff;
 $black: #000000;
 $white: #ffffff;
@@ -123,7 +118,7 @@ a{
     .col-2{
         grid-column: auto / span 6;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 2;
         }
     }
@@ -131,7 +126,7 @@ a{
     .col-3{
         grid-column: auto / span 6;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 3;
         }
     }
@@ -139,7 +134,7 @@ a{
     .col-4{
         grid-column: auto / span 6;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 4;
         }
     }
@@ -147,7 +142,7 @@ a{
     .col-5{
         grid-column: auto / span 6;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 5;
         }
     }
@@ -159,7 +154,7 @@ a{
     .col-7{
         grid-column: auto / span 12;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 7;
         }
     }
@@ -167,7 +162,7 @@ a{
     .col-8{
         grid-column: auto / span 12;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 8;
         }
     }
@@ -175,7 +170,7 @@ a{
     .col-9{
         grid-column: auto / span 12;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 9;
         }
     }
@@ -183,7 +178,7 @@ a{
     .col-10{
         grid-column: auto / span 12;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 10;
         }
     }
@@ -191,7 +186,7 @@ a{
     .col-11{
         grid-column: auto / span 12;
 
-        @media screen and (min-width: 500px){
+        @media screen and (min-width: 900px){
             grid-column: auto / span 11;
         }
     }
